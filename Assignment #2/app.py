@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 
 from calcAcre import calc_acre
 
@@ -20,7 +20,3 @@ def get_input():
 
     return {"acre": acre}
     # return acre
-
-
-if __name__ == '__main__':
-    app.run()
